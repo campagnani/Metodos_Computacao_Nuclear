@@ -1,4 +1,4 @@
-# Atividade 1 - Métodos de Computação Aplicados a Engenharia Nuclear
+# Atividade 1 - Técnicas de Computação Aplicados a Engenharia Nuclear
 
 ## Enunciado
 1. Qual é a condição para que os métodos de iteração possam ser empregados em sistemas de equações lineares. Explique e dê exemplos.
