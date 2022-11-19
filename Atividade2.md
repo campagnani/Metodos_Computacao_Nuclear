@@ -1,8 +1,6 @@
-# Técnicas da Computação Aplicadas a Energia Nuclear
+# Atividade Avaliativa 02 - Técnicas da Computação Aplicadas a Energia Nuclear
 
-## Atividade Avaliativa 02
-
-### Questão 1
+## Questão 1
 
 A equação geral que descreve o problema de transmissão de calor transiente por condução é dada por:
 
@@ -37,7 +35,7 @@ Escreva a equação que representa a difusão do calor na direção radial em es
 (c) revestimento da vareta.
 
 
-### Questão 2
+## Questão 2
 
 Usando as equações descritas na segunda questão:
 
@@ -47,7 +45,7 @@ b) Verifique a ordem, consistência e convergência destas equações.
 
 
 
-### Questão 3
+## Questão 3
 
 As características de uma vareta combustível de um típico PWR estão apresentadas na tabela abaixo.
 
