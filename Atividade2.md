@@ -34,6 +34,23 @@ Escreva a equação que representa a difusão do calor na direção radial em es
 
 (c) revestimento da vareta.
 
+### Respostas
+
+Em estádo estacionário, a variação da temperatura em relação ao tempo é nula, logo:
+
+    ∂T(r, φ, t)/∂t = 0
+    
+Considerando que o calor se distribui uniformemente de forma cicular na pastilha, a variação de temperatura em relação a φ é nula, logo:
+
+    ∂²T/∂φ² = 0
+    
+(a) considerando Q uma constante, temos que a equação da difusão de calor na direção radial para a pastilha é:
+ 
+    ∂²T/∂r² + 1/r * ∂T/∂r + Q/k = 0
+
+(b) e (c) considerando Q = 0 para o gap e o revestimento, temos que a equação da difusão de calor na direção radial para ambas regiões é:
+
+    ∂²T/∂r² + 1/r * ∂T/∂r = 0
 
 ## Questão 2
 
