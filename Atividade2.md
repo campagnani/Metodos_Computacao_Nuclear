@@ -60,6 +60,19 @@ a) Desenvolva as EDFs que represente numericamente o problema descrito para cada
 
 b) Verifique a ordem, consistência e convergência destas equações.
 
+### Respostas
+
+a) EDF da difusão de calor na direção radial para a pastilha:
+
+    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (Δr * r)   +   Q/k    =    0
+
+
+EDF da difusão de calor na direção radial para para o gap e o revestimento:
+
+    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (Δr * r)    =    0
+    
+
+b)
 
 
 ## Questão 3
