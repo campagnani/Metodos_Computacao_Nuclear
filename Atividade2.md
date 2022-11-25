@@ -80,3 +80,62 @@ b)
 As características de uma vareta combustível de um típico PWR estão apresentadas na tabela abaixo.
 
 Sabendo-se que a densidade de potência linear Q = 430 W/cm, calcule através de métodos numéricos a distribuição do centro do combustível até o raio externo do revestimento.
+
+
+### Resposta
+
+Foi criada uma função na linguagem MATLAB para calcular a temperatura em toda a vareta, a mesma pode ser encontrada neste [link]().
+
+Um script que chama essa função, exibe os valores, e plota o gráfico, pode ser encontrado nesse [link]().
+
+Para os resultados abaixo, cada região da vareta foi discretizada em 10 pontos.
+
+
+Região da Pastilha:
+
+Temperatura (°)  | Distância (cm)
+--------- | ------
+  1900.0   |   0
+  1801.9   |   0.0509
+  1681.6   |   0.1018
+  1543.7   |   0.1527
+  1391.6   |   0.2036
+  1228.1   |   0.2544
+  1055.6   |   0.3035
+   875.8   |   0.3562
+   690.2   |   0.4071
+   500.0   |   0.4580
+   
+
+Região do GAP:
+
+Temperatura (°)  | Distância (cm)
+--------- | ------
+  500.0000  |  0.4580
+  467.6593  |  0.4590
+  441.7867  |  0.4600
+  421.0887   | 0.4610
+  404.5303  |  0.4620
+  391.2835  |  0.4630
+  380.6861  |  0.4640
+  372.2082  |  0.4650
+  365.4259  |  0.4660
+  360.0000  |  0.4670
+  
+
+Região do revestimento:
+
+Temperatura (°)  | Distância (cm)
+--------- | ------
+  360.0000  |  0.4670
+  346.1397  |  0.4750
+  335.0515  |  0.4830
+  326.1809  |  0.4910
+  319.0844  |  0.4990
+  313.4072  |  0.5070
+  308.8655  |  0.5150
+  305.2321  |  0.5230
+  302.3254  |  0.5310
+  300.0000  |  0.5390
+  
+É possível ver os resultados concatenados no gráfico abaixo:
