@@ -12,13 +12,13 @@ function [T,R] = ftemperatura(r,Tc,Te,k,Q,pontos)
     tm = pontos-2;    %Tamanho da matriz
 
     %Coeficientes
-    %( T[i+1] - 2T[i] + T[i-1] ) / dr^2   +   ( T[i+1] - T[i-1] ) / (dr * r)   +   Q/k    =    0
-    %T[i+1]/dr^2 - 2T[i]/dr^2 + T[i-1]/dr^2   +   T[i+1]/(dr*r) - T[i-1]/(dr*r)   +   Q/k    =    0
-    %T[i+1]/dr^2 + T[i+1]/(dr*r) - 2T[i]/dr^2 + T[i-1]/dr^2 - T[i-1]/(dr*r)   +   Q/k    =    0
+    %( T[i+1] - 2T[i] + T[i-1] ) / dr^2   +   ( T[i+1] - T[i-1] ) / (2* dr * r)   +   Q/k    =    0
+    %T[i+1]/dr^2 - 2T[i]/dr^2 + T[i-1]/dr^2   +   T[i+1]/(2*dr*r) - T[i-1]/(2*dr*r)   +   Q/k    =    0
+    %T[i+1]/dr^2 + T[i+1]/(2*dr*r) - 2T[i]/dr^2 + T[i-1]/dr^2 - T[i-1]/(2*dr*r)   +   Q/k    =    0
 
-    a =  1/dr^2 - 1/(dr*r);
+    a =  1/dr^2 - 1/(2*dr*r);
     b = -2/dr^2;
-    c =  1/dr^2 + 1/(dr*r);
+    c =  1/dr^2 + 1/(2*dr*r);
     d =  Q/k;
 
     % Matriz
