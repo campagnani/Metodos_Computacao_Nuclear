@@ -47,10 +47,9 @@ function [T,R] = ftemperatura(r,Tc,Te,k,Q,pontos)
     T = inv(A)*B;
     T = [Tc;T;Te];
     
+    R = zeros(tm,1);
     for i = 2:tm+2
         R(i) =  dr*(i-1);
     end
 
 end
-
-
