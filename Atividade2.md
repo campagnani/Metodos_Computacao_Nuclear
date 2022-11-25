@@ -64,15 +64,15 @@ b) Verifique a ordem, consistência e convergência destas equações.
 
 a) EDF da difusão de calor na direção radial para a pastilha:
 
-    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (Δr * r)   +   Q/k    =    0
+    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (2 * Δr * r)   +   Q/k    =    0
 
 
 EDF da difusão de calor na direção radial para para o gap e o revestimento:
 
-    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (Δr * r)    =    0
+    ( T[i+1] - 2T[i] + T[i-1] ) / Δr²   +   ( T[i+1] - T[i-1] ) / (2 * Δr * r)    =    0
     
 
-b)
+b) As equações são de quarta ordem, devido ao truncamento da serie de taylor.
 
 
 ## Questão 3
