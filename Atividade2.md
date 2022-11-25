@@ -81,12 +81,13 @@ As características de uma vareta combustível de um típico PWR estão apresent
 
 Sabendo-se que a densidade de potência linear Q = 430 W/cm, calcule através de métodos numéricos a distribuição do centro do combustível até o raio externo do revestimento.
 
+![Tabela](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd2_tabela.png)
 
-### Resposta
+### Respostas
 
-Foi criada uma função na linguagem MATLAB para calcular a temperatura em toda a vareta, a mesma pode ser encontrada neste [link]().
+Foi criada uma função na linguagem MATLAB para calcular a temperatura em cada região da vareta, de acordo com os parametros passados. A mesma pode ser encontrada neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/ftemperatura.m).
 
-Um script que chama essa função, exibe os valores, e plota o gráfico, pode ser encontrado nesse [link]().
+Um script também em MATLAB que chama essa função, exibe os valores, e plota o gráfico, pode ser encontrado nesse [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd2.m).
 
 Para os resultados abaixo, cada região da vareta foi discretizada em 10 pontos.
 
@@ -94,7 +95,7 @@ Para os resultados abaixo, cada região da vareta foi discretizada em 10 pontos.
 Região da Pastilha:
 
 Temperatura (°)  | Distância (cm)
---------- | ------
+---------- | ------
   1900.0   |   0
   1801.9   |   0.0509
   1681.6   |   0.1018
@@ -110,11 +111,11 @@ Temperatura (°)  | Distância (cm)
 Região do GAP:
 
 Temperatura (°)  | Distância (cm)
---------- | ------
+----------- | ------
   500.0000  |  0.4580
   467.6593  |  0.4590
   441.7867  |  0.4600
-  421.0887   | 0.4610
+  421.0887  | 0.4610
   404.5303  |  0.4620
   391.2835  |  0.4630
   380.6861  |  0.4640
@@ -126,7 +127,7 @@ Temperatura (°)  | Distância (cm)
 Região do revestimento:
 
 Temperatura (°)  | Distância (cm)
---------- | ------
+----------- | ------
   360.0000  |  0.4670
   346.1397  |  0.4750
   335.0515  |  0.4830
@@ -139,3 +140,4 @@ Temperatura (°)  | Distância (cm)
   300.0000  |  0.5390
   
 É possível ver os resultados concatenados no gráfico abaixo:
+![Gráfico Temp](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd2_grafico_temp.png)
