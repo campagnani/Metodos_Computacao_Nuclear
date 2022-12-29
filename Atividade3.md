@@ -211,6 +211,6 @@ onde φ(x) é o fluxo de nêutrons para um grupo de energia e B_g é o buckling 
 
 (a) Desenvolva uma EDF que poderá ser empregada para uma solução numérica.
 
-(b) Utilize a EDF expressa em (a) para calcular a distribuição do fluxo e verifique a ordem, convergência e consistência desta equação.
+(b) Verifique a ordem, convergência e consistência desta equação.
 
 ### Resposta
