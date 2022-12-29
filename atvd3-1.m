@@ -25,7 +25,7 @@ F = [
     ];
 
 % Chute inicial
-k=1
+k=1;
 
 phi = [
     1;
@@ -33,15 +33,23 @@ phi = [
     1;
     ];
 
-S_a = F*phi %S anterior
+S = F*phi;
 
+i=1;
 
-for i=1:100 %Correto é usar while
-    S = F*phi
+err=0.00001; %Erro máximo (criterio de parada)
+
+while 1
+    i = i + 1;
     
-    k = S/S_a/k
+    S(:,i) = F * phi(:,i-1);
     
-    phi = inv(M)*S_a/k
+    k(i) = ( S(:,i)' ) / ( (S(:,i-1)') / k(i-1) );
     
-    S_a = S
+    phi(:,i) = inv(M) * S(:,i-1) / k(i-1);
+    
+    %Condição de parada
+    if i>2 &&  (  abs(k(i) - k(i-1)) < err  )  &&  (  abs(S(1,i) - S(1,i-1)) < err  )  &&  (  abs(S(2,i) - S(2,i-1)) < err  )  &&  (  abs(S(3,i) - S(3,i-1)) < err  )
+        break;
+    end
 end
