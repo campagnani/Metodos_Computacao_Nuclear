@@ -197,9 +197,11 @@ Um meio infinito é constituído de um material uniforme não multiplicador que 
 
 ### Resposta
 
-[Equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex)
+Desenvolvimento da EDF: [Código das equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex)
 
 ![Equações em imagem](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-3.png)
+
+Ordem, convergência e consistência desta equação:
 
 ## Questão 4
 
@@ -214,3 +216,11 @@ onde φ(x) é o fluxo de nêutrons para um grupo de energia e B_g é o buckling 
 (b) Verifique a ordem, convergência e consistência desta equação.
 
 ### Resposta
+
+(a) Desenvolvimento da EDF
+
+[Código das equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-4.tex)
+
+![Equações](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-4.png)
+
+(b) 
