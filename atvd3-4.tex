@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+
+\begin{document}
+
+    A equação diferencial dada pelo problema é:
+    
+    \begin{equation}
+        \frac{d^2\phi(x)}{dx^2}  + B_g^2 \phi = 0.
+    \end{equation}
+    
+    Aplicando a fórmula da diferença
+    
+    \begin{equation}
+        f_{xx|i} = \frac{f_{i+1} - 2 f_i + f_{i-1}}{\triangle x^2} 
+    \end{equation}
+    
+    na Eq. (1) temos que
+    
+    \begin{equation}
+        \frac{\phi_{i+1} - 2 \phi_i + \phi_{i-1}}{\triangle x^2} + B_g^2 \phi_i = 0
+    \end{equation}
+    
+    que resulta em
+    
+    \begin{equation}
+        a \phi_{i+1} + b \phi_i + a \phi_{i-1} = 0
+    \end{equation}
+    
+    onde
+    
+    \begin{equation}
+        a = \frac{1}{\triangle x^2}
+    \end{equation}
+    
+    e
+    
+    \begin{equation}
+        b = -\frac{2}{\triangle x^2} + B_g^2
+    \end{equation}
+    
+\end{document}
