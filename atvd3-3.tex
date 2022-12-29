@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+
+\begin{document}
+
+  Equação da Difusão:
+
+  \begin{equation}
+      \triangledown^2 \phi (\vec r) - \frac{1}{L^2} \phi(\vec r) = - \frac{S(\vec r)}{D}
+  \end{equation}
+
+  Laplaciano para o caso unidimensional de coordenadas cilíndricas:
+
+  \begin{equation}
+      \triangledown =  \frac{\partial^2}{\partial r^2}  + \frac{2}{r} \frac{\partial}{\partial r}
+  \end{equation}
+
+  Pelas Eq. (1) e (2) temos que
+  \begin{equation}
+      \frac{\partial^2\phi}{\partial r^2}  + \frac{2}{r} \frac{\partial\phi}{\partial r} - \frac{1}{L^2} \phi = \frac{S}{D}.
+  \end{equation}
+
+  Aplicando as formulas da diferença
+
+  \begin{equation}
+      f_{x|i} = \frac{f_{i+1} - f_{i-1}}{2 \triangle x} 
+  \end{equation}
+
+  e
+
+  \begin{equation}
+      f_{xx|i} = \frac{f_{i+1} - 2 f_i + f_{i-1}}{\triangle x^2} 
+  \end{equation}
+
+  na Eq. (3) temos que
+
+  \begin{equation}
+      \frac{\phi_{i+1} - 2 \phi_i + \phi_{i-1}}{\triangle x^2} + \frac{\phi_{i+1} - \phi_{i-1}}{2 \triangle x} - \frac{1}{L^2} \phi_i = - \frac{S}{D}
+  \end{equation}
+
+  que resulta em
+
+  \begin{equation}
+      a \phi_{i+1} + b \phi_i + c \phi_{i-1} = - \frac{S}{D}
+  \end{equation}
+
+  onde
+
+  \begin{equation}
+      a = \frac{1}{\triangle x^2} + \frac{1}{\triangle x}
+  \end{equation}
+
+  e
+
+  \begin{equation}
+      b = -\frac{2}{\triangle x^2} - \frac{1}{L^2}
+  \end{equation}
+
+  e
+
+  \begin{equation}
+      c = \frac{1}{\triangle x^2} - \frac{1}{\triangle x}.
+  \end{equation}
+
+\end{document}
