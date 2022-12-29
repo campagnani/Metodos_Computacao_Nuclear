@@ -104,6 +104,10 @@ Um meio infinito é constituído de um material uniforme não multiplicador que 
 
 ### Resposta
 
+[Equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex)
+
+![Equações em imagem](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-3.png)
+
 ## Questão 4
 
 A Equação de Helmholtz para o núcleo de um reator de placa infinita com espessura finita é expressa por:
