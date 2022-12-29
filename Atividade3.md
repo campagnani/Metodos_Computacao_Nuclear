@@ -152,9 +152,9 @@ S_0 = 1,0 x 10–3 nêutrons * cm–2 * s–1
 
 [Código](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-2.m)
 
-As respostas abaixo é a distribuição do fluxo (φ) em função da distância (r).
+As respostas abaixo são dadas a partir da distribuição do fluxo (φ) em função da distância (r).
 
-(a) Pelo método EDF:
+(a) Cálculo pelo método EDF:
 ```
             φ_edf          |          r         
     -----------------------|--------------------     
@@ -170,7 +170,7 @@ As respostas abaixo é a distribuição do fluxo (φ) em função da distância 
     0                      |   0.632455532033676
 ```
 
-(b) Pelo método analítico.
+(b) Cálculo pelo método analítico.
 ```
          φ_analítico       |          r         
     -----------------------|--------------------     
