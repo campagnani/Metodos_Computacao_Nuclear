@@ -24,6 +24,79 @@ como constantes em todo intervalo [0,1], assumindo fluxo nulo em x=0 e x=1 e faz
 
 ### Resposta
 
+Conforme apostila da disciplina, tem que ser desenvolvido um algoritimo para solucionar esse problema conforme essa estrutura:
+
+![Print apostila](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-1.1.png)
+
+O código desenvolvido se encontra abaixo.
+
+[Código](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-1.m)
+
+O resultado convergiu após 4 interações.
+
+Interação 1 (chute inicial)
+
+```
+k = 1
+
+φ =
+1
+1	
+1	
+
+S =
+-0.675000000000000
+-0.675000000000000
+-0.675000000000000
+```
+
+Interação 2
+
+```
+S =
+-0.675000000000000
+-0.675000000000000
+-0.675000000000000
+
+k = 1
+
+φ = 
+0.917157712305026
+1.21663778162912
+0.917157712305026
+```
+
+Interação 3
+```
+S = 
+-0.619081455805893
+-0.821230502599653
+-0.619081455805893
+
+k = 1.01698440207972
+
+φ =
+0.917157712305026
+1.21663778162912
+0.917157712305026
+```
+
+Interação 4 (Resposta final)
+```
+S =
+-0.619081455805893
+-0.821230502599653
+-0.619081455805893
+            
+k =
+1.01698440207972
+
+φ =
+0.915320411266228
+1.27910601694825
+0.915320411266228
+```
+
 ## Questão 2
 
 Um meio infinito é constituído de um material uniforme não multiplicador e possui uma fonte pontual de nêutrons. Como é de conhecimento, o fluxo de nêutrons ϕ em função da distância (r) neste meio pode ser calculado através da seguinte equação:
