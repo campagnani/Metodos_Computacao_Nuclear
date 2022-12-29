@@ -62,6 +62,42 @@ S_0 = 1,0 x 10–3 nêutrons * cm–2 * s–1
 
 ### Resposta
 
+[Código](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-2.m)
+
+(a)
+```
+            φ_edf          |          r         
+    -----------------------|--------------------     
+    0                      |   0.063245553203367
+    0                      |   0.126491106406735
+    0                      |   0.189736659610103
+    0                      |   0.252982212813470
+    0                      |   0.316227766016838
+    0                      |   0.379473319220206
+    0                      |   0.442718872423573
+    0                      |   0.505964425626941
+    0                      |   0.569209978830308
+    0                      |   0.632455532033676
+```
+(b)
+```
+         φ_analítico       |          r         
+    -----------------------|--------------------     
+    0.001256972701215060   |   0.063245553203367
+    0.000627858178395378   |   0.126491106406735
+    0.000418153756027636   |   0.189736659610103
+    0.000313301858459109   |   0.252982212813470
+    0.000250390970559500   |   0.316227766016838
+    0.000208450587285587   |   0.379473319220206
+    0.000178493349333310   |   0.442718872423573
+    0.000156025577050796   |   0.505964425626941
+    0.000138550781742699   |   0.569209978830308
+    0.000124571070191935   |   0.632455532033676
+```
+(c)
+
+![Gráfico](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-2.png)
+
 ## Questão 3
 
 Um meio infinito é constituído de um material uniforme não multiplicador que possui uma fonte linear isotrópica situada em geometria cilíndrica localizada em r = 0. Desenvolva uma EDF que poderá ser empregada para uma solução numérica, verifique a ordem, convergência e consistência desta equação.
