@@ -74,9 +74,18 @@ b(i+1) = -2 - d_r^2/L^2;
 A(i+1,i) = a(i+1);
 A(i+1,i+1) = b(i+1);
 
-nulo = zeros(i_total,1);
-phi_r2 = inv(A)*nulo
-%phi_r2 = fjacobi(A,nulo,nulo,0.00001,'atvd3-2.txt')
+
+%Vetor b     |  Ax=B
+
+B = zeros(i_total,1);
+B(1)= -phi_r(1);
+B(i_total)= -phi_r(i_total);
+
+%Solução
+
+phi_r2 = inv(A)*B
+
+%phi_r2 = fjacobi(A,B,zeros(i_total,1),0.00001,'atvd3-2.txt')
 
 
 %% Grafico
