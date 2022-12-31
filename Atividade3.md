@@ -217,10 +217,16 @@ onde φ(x) é o fluxo de nêutrons para um grupo de energia e B_g é o buckling 
 
 ### Resposta
 
+As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-4.tex), ou também pode ser vistas através das imagens abaixo.
+
 (a) Desenvolvimento da EDF
 
-[Código das equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-4.tex)
+![Desenvolvimento](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-4.png)
 
-![Equações](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-4.png)
+(b) Demostração da consistência, convergencia e da ordem.
 
-(b) 
+![Demonstração](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-4.2.png)
+
+Conforme descrito na apostila "Pode-se assumir que, se uma aproximação de diferença finita de uma equação diferencial elíptica é uma aproximação consistente, então o método de diferenças finitas é convergente". Portanto, como a EDF é consistente, ela também será convergente.
+
+E também conforme descrito na apostila "A ordem de uma aproximação diferença finita de uma equação diferencial parcial é a taxa na qual o erro da solução da diferença finita tende a zero à medida que os espaçamentos se aproximam de zero". Pela Eq. (13) é possível verificar-se que a EDF é de segunda ordem.
