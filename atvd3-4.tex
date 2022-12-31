@@ -4,40 +4,94 @@
 
 \begin{document}
 
-    A equação diferencial dada pelo problema é:
+    \section{Desenvolvimento da EDF}
     
-    \begin{equation}
-        \frac{d^2\phi(x)}{dx^2}  + B_g^2 \phi = 0.
-    \end{equation}
+        A equação diferencial dada pelo problema é:
+        
+        \begin{equation}
+            \frac{d^2\phi(x)}{dx^2}  + B_g^2 \phi = 0.
+        \end{equation}
+        
+        Aplicando a fórmula da diferença
+        
+        \begin{equation}
+            f_{xx|i} = \frac{f_{i+1} - 2 f_i + f_{i-1}}{\Delta x^2} 
+        \end{equation}
+        
+        na Eq. (1) temos que
+        
+        \begin{equation}
+            \frac{\phi_{i+1} - 2 \phi_i + \phi_{i-1}}{\Delta x^2} + B_g^2 \phi_i = 0
+        \end{equation}
+        
+        que resulta em
+        
+        \begin{equation}
+            a \phi_{i+1} + b \phi_i + a \phi_{i-1} = 0
+        \end{equation}
+        
+        onde
+        
+        \begin{equation}
+            a = \frac{1}{\Delta x^2}
+        \end{equation}
+        
+        e
+        
+        \begin{equation}
+            b = -\frac{2}{\Delta x^2} + B_g^2
+        \end{equation}
     
-    Aplicando a fórmula da diferença
+    \section{Prova da consistência}
+
+        Multiplicando ambos lados da Eq. (3) por $\Delta x^2$ temos
     
-    \begin{equation}
-        f_{xx|i} = \frac{f_{i+1} - 2 f_i + f_{i-1}}{\triangle x^2} 
-    \end{equation}
-    
-    na Eq. (1) temos que
-    
-    \begin{equation}
-        \frac{\phi_{i+1} - 2 \phi_i + \phi_{i-1}}{\triangle x^2} + B_g^2 \phi_i = 0
-    \end{equation}
-    
-    que resulta em
-    
-    \begin{equation}
-        a \phi_{i+1} + b \phi_i + a \phi_{i-1} = 0
-    \end{equation}
-    
-    onde
-    
-    \begin{equation}
-        a = \frac{1}{\triangle x^2}
-    \end{equation}
-    
-    e
-    
-    \begin{equation}
-        b = -\frac{2}{\triangle x^2} + B_g^2
-    \end{equation}
-    
+        \begin{equation}
+            \phi_{i+1} - 2 \phi_i + \phi_{i-1} + B_g^2 \Delta x^2 \phi_i = 0
+        \end{equation}
+
+        que pode ser reescrita como
+
+        \begin{equation}
+            ( \phi_{i+1} + \phi_{i-1} )  + (B_g^2 \Delta x^2  -  2) \phi_i = 0.
+        \end{equation}
+
+        Através da séria de Taylor pode se escrever
+
+        \begin{equation}
+            \phi_{i+1} = \phi_{i}  + \frac{d\phi}{dx} \Delta x  +  \frac{1}{2}\frac{d^2\phi}{dx^2} \Delta x^2  +  \frac{1}{6}\frac{d^3\phi}{dx^3} \Delta x^3 + \frac{1}{24}\frac{d^4\phi}{dx^4} \Delta x^4 + ...
+        \end{equation}
+
+        e
+
+        \begin{equation}
+            \phi_{i+1} = \phi_{i}  - \frac{d\phi}{dx} \Delta x  +  \frac{1}{2}\frac{d^2\phi}{dx^2} \Delta x^2  -  \frac{1}{6}\frac{d^3\phi}{dx^3} \Delta x^3 + \frac{1}{24}\frac{d^4\phi}{dx^4} \Delta x^4 - ...
+        \end{equation}
+
+        logo
+
+        \begin{equation}
+            \phi_{i+1} + \phi_{i-1}    =     2\phi_{i}   +  \frac{d^2\phi}{dx^2} \Delta x^2  + \frac{1}{12}\frac{d^4\phi}{dx^4} \Delta x^4 + ...
+        \end{equation}
+        
+        Substituindo na EDF temos que
+
+        \begin{equation}
+            (2\phi_{i}   +  \frac{d^2\phi}{dx^2} \Delta x^2  + \frac{1}{12}\frac{d^4\phi}{dx^4} \Delta x^4 + ...) - (2 + \Delta x^2 B_g^2 ) = 0
+        \end{equation}
+
+        Dividindo por $\Delta x^2$ e rearranjando, temos que 
+
+        \begin{equation}
+            \frac{d^2 \phi}{dx^2}  - B_g \phi = \frac{d^2\phi}{dx^2} \Delta x^2  + \frac{1}{12}\frac{d^4\phi}{dx^4} \Delta x^4 + ...
+        \end{equation}
+
+        Como todos os termos do lado direito na Eq. acima estão multiplicados por $\Delta x$ elevada a alguma potencia positiva, podemos inferir que
+        
+        \begin{equation}
+            \Delta x \rightarrow 0      \Rightarrow       \frac{d^2 \phi}{dx^2}  - B_g \phi   \rightarrow 0
+        \end{equation}
+
+        O que prova que a EDF é consistente.
+        
 \end{document}
