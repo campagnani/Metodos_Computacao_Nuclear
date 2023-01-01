@@ -197,7 +197,9 @@ Um meio infinito é constituído de um material uniforme não multiplicador que 
 
 ### Resposta
 
-Desenvolvimento da EDF: [Código das equações em LaTeX](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex)
+As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex), ou também pode ser vistas através das imagens abaixo.
+
+Desenvolvimento da EDF: 
 
 ![Equações em imagem](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-3.png)
 
