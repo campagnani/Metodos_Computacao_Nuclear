@@ -205,6 +205,10 @@ Ordem, convergência e consistência desta equação:
 
 ![Equações em imagem](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-3.2.png)
 
+Conforme descrito na apostila "Pode-se assumir que, se uma aproximação de diferença finita de uma equação diferencial elíptica é uma aproximação consistente, então o método de diferenças finitas é convergente". Portanto, como a EDF é consistente, ela também será convergente.
+
+E também conforme descrito na apostila "A ordem de uma aproximação diferença finita de uma equação diferencial parcial é a taxa na qual o erro da solução da diferença finita tende a zero à medida que os espaçamentos se aproximam de zero". Pela Eq. (13) é possível verificar-se que a EDF é de segunda ordem.
+
 ## Questão 4
 
 A Equação de Helmholtz para o núcleo de um reator de placa infinita com espessura finita é expressa por:
