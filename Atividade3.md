@@ -1,5 +1,17 @@
 # Atividade Avaliativa 03 - Técnicas da Computação Aplicadas a Energia Nuclear
 
+
+<div id='indice'/>
+
+*******
+Indice das respostas:
+ 1. [Questão 1](#q1)
+ 2. [Questão 2](#q2)
+ 3. [Questão 3](#q3)
+ 4. [Questão 4](#q4)
+
+*******
+
 ## Questão 1
 
 Sabe-se que o fluxo monoenergético em um meio homogêneo, unidimensional pode ser aproximado através da seguinte Equação de Diferença Finita (EDF):
@@ -22,7 +34,10 @@ D   =  1,0 cm
 ```
 como constantes em todo intervalo [0,1], assumindo fluxo nulo em x=0 e x=1 e fazendo ∆x =1/4, determine a distribuição do fluxo e o fator de multiplicação (k).
 
-### Resposta
+
+<div id='q1'/>
+
+### Resposta [(Voltar ao indice)](#indice)
 
 Conforme apostila da disciplina, tem que ser desenvolvido um algoritimo para solucionar esse problema conforme essa estrutura:
 
@@ -148,7 +163,9 @@ S_0 = 1,0 x 10–3 nêutrons * cm–2 * s–1
 (c) Plote a distribuição obtida em (a) e (b) e compare com a solução analítica.
 
 
-### Resposta
+<div id='q2'/>
+
+### Resposta [(Voltar ao indice)](#indice)
 
 [Código](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-2.m)
 
@@ -195,7 +212,10 @@ As respostas abaixo são dadas a partir da distribuição do fluxo (φ) em funç
 
 Um meio infinito é constituído de um material uniforme não multiplicador que possui uma fonte linear isotrópica situada em geometria cilíndrica localizada em r = 0. Desenvolva uma EDF que poderá ser empregada para uma solução numérica, verifique a ordem, convergência e consistência desta equação.
 
-### Resposta
+
+<div id='q3'/>
+
+### Resposta [(Voltar ao indice)](#indice)
 
 As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex), ou também pode ser vistas através das imagens abaixo.
 
@@ -223,7 +243,10 @@ onde φ(x) é o fluxo de nêutrons para um grupo de energia e B_g é o buckling 
 
 (b) Verifique a ordem, convergência e consistência desta equação.
 
-### Resposta
+
+<div id='q4'/>
+
+### Resposta [(Voltar ao indice)](#indice)
 
 As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-4.tex), ou também pode ser vistas através das imagens abaixo.
 
