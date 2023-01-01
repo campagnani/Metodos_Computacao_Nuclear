@@ -4,7 +4,7 @@
 <div id='indice'/>
 
 *******
-Indice das respostas:
+Índice das respostas:
  1. [Questão 1](#q1)
  2. [Questão 2](#q2)
  3. [Questão 3](#q3)
@@ -37,7 +37,7 @@ como constantes em todo intervalo [0,1], assumindo fluxo nulo em x=0 e x=1 e faz
 
 <div id='q1'/>
 
-### Resposta [(Voltar ao indice)](#indice)
+### Resposta [(Voltar ao índice)](#indice)
 
 Conforme apostila da disciplina, tem que ser desenvolvido um algoritimo para solucionar esse problema conforme essa estrutura:
 
@@ -165,7 +165,7 @@ S_0 = 1,0 x 10–3 nêutrons * cm–2 * s–1
 
 <div id='q2'/>
 
-### Resposta [(Voltar ao indice)](#indice)
+### Resposta [(Voltar ao índice)](#indice)
 
 [Código](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-2.m)
 
@@ -215,7 +215,7 @@ Um meio infinito é constituído de um material uniforme não multiplicador que 
 
 <div id='q3'/>
 
-### Resposta [(Voltar ao indice)](#indice)
+### Resposta [(Voltar ao índice)](#indice)
 
 As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-3.tex), ou também pode ser vistas através das imagens abaixo.
 
@@ -246,7 +246,7 @@ onde φ(x) é o fluxo de nêutrons para um grupo de energia e B_g é o buckling 
 
 <div id='q4'/>
 
-### Resposta [(Voltar ao indice)](#indice)
+### Resposta [(Voltar ao índice)](#indice)
 
 As respostas dessa questão foram escritas no formato LaTeX, e podem ser acessadas neste [link](https://github.com/campagnani/Tecnicas_Computacao_Nuclear/blob/main/atvd3-4.tex), ou também pode ser vistas através das imagens abaixo.
 
