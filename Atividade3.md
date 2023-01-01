@@ -203,6 +203,8 @@ Desenvolvimento da EDF: [Código das equações em LaTeX](https://github.com/cam
 
 Ordem, convergência e consistência desta equação:
 
+![Equações em imagem](https://raw.githubusercontent.com/campagnani/Tecnicas_Computacao_Nuclear/main/imagens/atvd3-3.2.png)
+
 ## Questão 4
 
 A Equação de Helmholtz para o núcleo de um reator de placa infinita com espessura finita é expressa por:
